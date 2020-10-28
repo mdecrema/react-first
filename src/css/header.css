@@ -1,16 +1,15 @@
+header {
+    width: 100vw;
+    height: 70px;
+    background: #fff;
+    top: 0;
+}
+
 .nav-bar {
     width: 100vw;
     height: 60px;
     background-color: #fff;
-    position: relative;
-}
-
-.nav-bar-wrapper {
-    width: 100vw;
-    height: 50px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position: fixed;
 }
 
 .logo {

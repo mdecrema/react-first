@@ -1,9 +1,14 @@
 import React from "react";
+
 import styles from "../css/mainContent.css";
 
 function MainContent() {
     return(
-        <h2>BBC NEWS</h2>
+        <main>
+            <div className="row">
+               <h4>.</h4>
+            </div>
+        </main>
     )
 }
 

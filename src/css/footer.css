@@ -2,9 +2,6 @@ footer {
     width: 100vw;
     height: 150px;
     background-color: red;
-    position: absolute;
-    bottom: 0;
-    left: 0;
     color: #fff;
     text-align: center;
 }

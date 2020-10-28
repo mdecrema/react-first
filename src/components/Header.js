@@ -5,7 +5,6 @@ import styles from "../css/header.css";
 function Header() {
     return (
         <nav className="nav-bar">
-        <div className="nav-bar-wrapper">
             <div className="logo">
                 <img id="img" src={Logo} />
             </div>
@@ -17,7 +16,6 @@ function Header() {
                     <li><a href="">World</a></li>
                 </ul>
             </div> 
-        </div>
         </nav> 
     )
 }
