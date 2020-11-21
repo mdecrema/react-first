@@ -1,46 +1,240 @@
-header {
-    width: 100vw;
-    height: 70px;
-    background: #fff;
-    top: 0;
-}
-
-.nav-bar {
-    width: 100vw;
-    height: 60px;
-    background-color: #fff;
+.menu-desk {
+    display: block;
     position: fixed;
-}
+    top: 0;
+    width: 100vw;
+    height: 150px;
+    background-color: #fff;
+    z-index: 4;
+  }
+  
+  .menu-smart {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 110px;
+    background-color: #fff;
+    z-index: 4;
+  }
 
-.logo {
-    width: 150px;
-    height: 40px;
-    overflow: hidden;
+  .page-hidden-menu {
+    display: none;
+  }
+  
+  .logo-box {
+    width: 120px;
+    height: 100px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  
+  .hamburger-box {
+    width: 70px;
+    height: 90px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    float: right;
+  }
+  
+  .hamb-logo {
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+  }
+  
+  .nav-bar {
+    width: 100vw;
+    position: fixed;
+    background-color: #fff;
+    z-index: 2;
+  }
+  
+  .header-top {
+    height: 120px;
+    background-color: #fff;
+    position: relative;
+  }
+  
+  .logo {
+    width: 10%;
+    height: 120px;
     float: left;
-}
-
-#img {
+  }
+  
+  #logo {
     width: 100%;
-    height: 100%;
-}
-
-.menu {
-    width: calc(100% - 160px);
+    height: 75%;
+    margin-top: 3%;
+  }
+  
+  .menu {
+    width: 90%;
+    height: 120px;
+    position: relative;
+    float: left;  
+  }
+  
+  .menu ul {
     height: 40px;
-    border-left: 10px solid #fff;
-    background-color: red;
-    float: left;
-}
-
-
-.menu li {
-    list-style: none;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+  
+  .menu li {
     display: inline-block;
-    padding: 0 5%;
-}
-
-.menu a {
+    padding: 0 3%;
+    line-height: 10px;
+    text-align: center;
+    list-style: none;
+  }
+  
+  .menu li {
     text-decoration: none;
+    color: #333333;
+  }
+  
+  .menu li:hover  {
+    color: rgba(0,172,187,1);
+    text-decoration: none;
+  }
+  
+  .hamb-menu ul {
+    width: 150px;
+    height: 200px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    z-index: 3;
+    background-color: lightgrey;
+    display: none;
+    padding: 2% 0;
+  }
+  
+  .hamb-menu li {
+    list-style: none;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 15%;
+    text-align: left;
+  }
+  
+  .hamb-menu a {
+    text-decoration: none;
+    color: #333333;
+  }
+  
+  /* Recapiti */
+  .header-bottom {
+    height: 30px;
+    background: linear-gradient(90deg, rgba(0,172,187,1) 0%, rgba(9,119,137,1) 69%, rgba(16,83,102,1) 100%);
+  }
+  
+  #phone {
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: lighter;
     color: #fff;
-    font-weight: bold;
-}
+    text-align: center;
+  }
+  
+  /* Smartphone */
+  
+  @media only screen and (max-width: 768px) {
+    .menu-desk {
+      display: none;
+    }
+  
+    .menu-smart {
+      display: block;
+    }
+  
+    .menu {
+      height: 100px;
+    }
+  
+    .logo {
+      width: 100%;
+      height: 80%;
+    }
+  
+    .logo img {
+      width: 90px;
+      height: 60px;
+    }
+  
+    /* Recapiti */
+    #phone {
+      font-size: 10px;
+    }
+  
+  }
+  
+    /* Tablet */
+  
+  @media only screen and (min-width: 769px) and (max-width: 991px) {
+    .menu-desk {
+      display: none;
+    }
+  
+    .menu-smart {
+      display: block;
+    }
+  
+    .menu {
+      height: 100px;
+    }
+  
+    .logo {
+      width: 100%;
+      height: 80%;
+    }
+  
+    .logo img {
+      width: 90px;
+      height: 60px;
+    }
+  
+    /* Recapiti */
+    #phone {
+      font-size: 10px;
+    }
+  
+  }
+  
+    /* Desktop */
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .menu-desk {
+      display: none;
+    }
+  
+    .menu-smart {
+      display: block;
+    }
+  
+    .menu {
+      height: 100px;
+    }
+  
+    .logo {
+      width: 100%;
+      height: 80%;
+    }
+  
+    .logo img {
+      width: 90px;
+      height: 60px;
+    }
+  
+    /* Recapiti */
+    #phone {
+      font-size: 10px;
+    }
+  
+  }

@@ -1,0 +1,231 @@
+.superhydrophobic {
+    width: 80vw;
+    min-height: 1000px;
+    margin: 5% 10vw;
+}
+
+.superhydrophobic::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.superhydrophobic h2 {
+    margin-bottom: 5%;
+}
+
+.greenLawn {
+    width: 100%;
+    height: 300px;
+    /*background-image: url("../img/grass2.png");*/
+    background-size: 110%;
+    background-position: -50px 0;
+    background-repeat: no-repeat;
+}
+
+.images-side, .text-side {
+    width: 40%;
+    margin-top: 10%;
+    float: left;
+    overflow: hidden;
+}
+
+.text-side {
+    width: 60%;
+    padding: 0 3%;
+}
+
+.text-sidep {
+        line-height: 30px;
+    }
+
+
+.imgProva {
+    width: 101%;
+    height: 101%;
+}
+
+#grass {
+    width: 100%;
+    height: 110%;
+}
+
+/* Slider Box  */
+.slider-box {
+    width: 80vw;
+    height: 450px;
+    margin: 5% 10vw;
+    position: relative;
+    /*background-image: url("../img/wood2.jpg");*/
+    background-size: cover;
+}
+
+.freccina {
+    position: absolute;
+    font-size: 20px;
+    color: darkgrey;
+    display: none;
+}
+
+.sx {
+    top: 40%;
+    left: 0;
+}
+
+.dx {
+    top: 40%;
+    right: 0;
+}
+
+.slider {
+    width: 80vw;
+    height: 500px;
+    position: absolute;
+    /*background-image: url("../img/wood2.jpg");*/
+    /*background-size: cover;*/
+    /*border: 1px solid red;*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    color: #000;
+    /*text-shadow: 1px 0.5px 5px #333333;*/
+}
+
+.slider-text {
+    width: calc((100% / 3) - 5px);
+    height: 100%; 
+    margin-top: 10%;
+    float: left;
+    text-align: center;
+    position: relative;
+}
+
+    .techinque-icon {
+        width: 100%;
+        height: 100px;
+        padding: 2% 0;
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .techinque-icon h4, .techinque-icon h5 {
+        text-align: center;
+        width: 100%;
+        height: 30px;
+    }
+
+    .techinque-icon h4 {
+        margin-top: 10%;
+    }
+
+    .techinque-icon ul {
+        width: 70%;
+        margin-left: 20%;
+    }
+
+    .techinque-icon li{
+        list-style: none;
+        text-align: left;
+    }
+
+
+.pallinoNum {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid transparent;
+    border-radius: 100%;
+    background-color: yellow;
+}
+
+.tick {
+    margin-right: 20px;
+}
+
+/*.pallino {
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    display: none;
+    float: left;
+    margin: 0 5%;
+}*/
+
+/*.pallini-box {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+} */
+
+
+
+/* Smartphone */
+
+@media only screen and (max-width: 768px) {
+
+    .slider-box {
+        width: 80vw;
+        height: 400px;
+    }
+
+    .slider-text {
+        height: 400px;
+        width: 100%;
+        display: none;
+        margin-top: 100px;
+    }
+
+    .techinque-icon {
+            width: 100%;
+            height: 80px;
+            padding: 2% 0;
+            text-align: center;
+            font-size: 40px;
+        }
+
+        .slider-text h4, h5 {
+            text-align: center;
+            width: 100%;
+            height: 20px;
+        }
+
+        .slider-text ul {
+            width: 70%;
+        }
+    
+
+    .slider-text.active {
+        display: block;
+    }
+
+    .freccina {
+        display: block;
+    }
+
+    /*.pallino {
+        display: block;
+    } */
+
+    /*.pallino.active {
+        background-color: yellow;
+    }*/
+}
+
+/* Tablet */
+
+@media only screen and (min-width: 769px) and (max-width: 991px) {
+   
+
+}
+
+/* Desktop */
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+
+}

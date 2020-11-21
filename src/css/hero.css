@@ -1,0 +1,90 @@
+.hero {
+    height: 70vh;
+    background-color: grey;
+    position: relative;
+  }
+  
+  #technologies {
+    /*background-image: url("../img/techno2.jpg");  */
+    background-repeat: no-repeat;
+    background-position: 0, -400px;
+    background-size: cover;
+  }
+
+  #products {
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-size: cover;
+  }
+  
+  .hero-opacity {
+    width: 100vw;
+    height: 70vh;
+    background-color: #000;
+    opacity: 0.2;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .hero-text {
+      width: 70%;
+      height: 400px;
+      position: absolute;
+      left: 15%;
+      top: 200px;
+      text-align: center;
+      color: #fff;
+      text-shadow: 2px 0.5px 5px #000;
+  }
+  
+.hero-text h2 {
+          margin-bottom: 60px;
+          font-size: 40px;
+          font-family: 'Cabin', sans-serif; 
+      }   
+  
+.hero-text p {
+          font-size: 20px;
+      }
+  
+  
+  /* Smartphone */
+  
+  @media only screen and (max-width: 768px) {
+  
+     .hero-text {
+      width: 80%;
+      height: 300px;
+      position: absolute;
+      left: 10%;
+      top: 150px;
+      text-align: center;
+      color: #fff;
+     }
+
+      .hero-text h2 {
+          margin-bottom: 30px;
+          font-size: 20px;
+          font-family: 'Cabin', sans-serif; 
+      }   
+  
+      .hero-text p {
+          font-size: 14px;
+      }
+
+  
+  }
+  
+    /* Tablet */
+  
+  @media only screen and (min-width: 769px) and (max-width: 991px) {
+    
+  }
+  
+    /* Desktop */
+  
+  @media only screen and (min-width: 992px) and (max-width: 1200px) {
+   
+  
+  }
