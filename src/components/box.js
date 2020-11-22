@@ -1,4 +1,5 @@
 import React from "react";
+import { BrowserRouter as Link } from "react-router-dom";
 import "../css/home.css";
 import "../css/variables.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'; 
@@ -14,7 +15,7 @@ const Box = (props) => (
         </p>
         <hr />
         <div className="find_more_container">
-            <a className="find_more" href="">Find out more</a>
+            <Link to={props.url} className="find_more">Find out more</Link>
         </div>
     </section>
     

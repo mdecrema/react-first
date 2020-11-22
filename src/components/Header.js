@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";  
+import { BrowserRouter as Link } from "react-router-dom";  
 import "../css/variables.css";
 import "../css/header.css";
 import logo from '../SmallLogo-372w.webp';
