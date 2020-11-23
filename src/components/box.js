@@ -15,7 +15,7 @@ const Box = (props) => (
         </p>
         <hr />
         <div className="find_more_container">
-            <Link to={props.url} className="find_more">Find out more</Link>
+            <Link to={props.url} className="find_more"><h6>Find out more</h6></Link>
         </div>
     </section>
     

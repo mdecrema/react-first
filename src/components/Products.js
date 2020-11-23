@@ -11,39 +11,50 @@ function Products() {
     const products = "products";
     const title = "Products & Applications";
     const text = "Nanotechnology: small scale application for great impact on the product!";
-    const img1 = {
-        backgroundImage: "url("+ coat +")"
-    };
-    const img2 = {
-        backgroundImage: "url("+ bubbles +")"
-    };
-    const img3 = {
-        backgroundImage: "url("+ sheet +")"
-    };
     return(
         <div>
             <Hero type={products} imgUrl={cotone} title={title} text={text} />
-            <h2>Superhydrophobic Silicone Nano-Filaments (SNF)</h2>
+            <div className="page_wrapper container">
+            <h2 class="title">Superhydrophobic Silicone Nano-Filaments (SNF)</h2>
             <div class="container info">
             <div class="row">
-            <section style={img1} className="col-lg-3 offset-lg-1 col-md-4 col-sm-6 products-box">
-                <h3></h3>
+            <section className="col-lg-3 offset-lg-1 col-md-4 col-sm-6 products-box">
+                <img src={coat} alt="" />
+                <h3>Thermo Insulation Products</h3>
+                <p>
+                Thermal Insulation products from natural resources, like wood, cellulose, 
+                cotton, feathers and downs treated with Silany technology deliver high performance, 
+                are insensitive against humidity and flame retardant. 100% sustainability included. 
+                </p>
                 <div className="find_more_container">
                     <a className="find_more" href="">Find out more</a>
                 </div>
             </section>
-            <section style={img2} className="col-lg-3 offset-lg-1 col-md-4 col-sm-6 products-box">
-                <h3></h3>
+            <section className="col-lg-3 offset-lg-1 col-md-4 col-sm-6 products-box">
+                <img src={bubbles} alt="" />
+                <h3>Coating Dispersions</h3>
+                <p>
+                Our coating dispersions deliver highly durable properties. From superhydrophobic 
+                to superwetting, from superoilrepellent to self-cleaning, from UV protection 
+                to IR reflectivity. Easy applicable by spray-coating, dip-coating, and more.
+                </p>
                 <div className="find_more_container">
                     <a className="find_more" href="">Find out more</a>
                 </div>
             </section>
-            <section style={img3} className="col-lg-3 offset-lg-1 col-md-4 col-sm-6 products-box">
-                <h3></h3>
+            <section className="col-lg-3 offset-lg-1 col-md-4 col-sm-6 products-box">
+                <img src={sheet} alt="" />
+                <h3>Filter and Separation Media</h3>
+                <p>
+                Filter and separation media with nanotechnology structures deliver extra-performance. 
+                Oil-water separation with highest efficiency is just one example. 
+                Based on granular material, textile filters or non-woven.
+                </p>
                 <div className="find_more_container">
                     <a className="find_more" href="">Find out more</a>
                 </div>
             </section>
+            </div>
             </div>
             </div>
         </div>

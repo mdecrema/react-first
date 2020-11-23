@@ -1,13 +1,31 @@
+.page_wrapper {
+  min-height: 900px;
+}
+
+.page_wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.title {
+  margin-top: 5%;
+}
+
 .products-box {
-    height: 250px;
-    border: 2px solid lightblue;
+    height: 600px;
+    /*border: 2px solid lightblue;*/
     border-radius: 5px;
     background-repeat: no-repeat;
     background-position: cover;
-    text-align: center;
+    text-align: left;
     padding: 3% 1%;
     position: relative;
     float: left;
+    margin: 5% 4%;
+}
+.products-box:hover {
+  background-color: lightblue;
 }
 
 .margin-box {
@@ -18,15 +36,20 @@
     font-size: 50px;
     color: #02878A;
   }
+
+  .products-box img {
+    width: 100%;
+  }
   
   .products-box h3 {
     font-size: 20px;
     margin: 40px 0 30px 0;
+    color: #02878A;
   }
   
   .products-box p {
     min-height: 150px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 25px;
   }
   

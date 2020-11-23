@@ -1,8 +1,16 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faWind } from "@fortawesome/free-solid-svg-icons";
+import { faSprayCan } from "@fortawesome/free-solid-svg-icons";
+import { faTint } from "@fortawesome/free-solid-svg-icons";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+
 import "../css/variables.css";
+import "../css/home.css";
 import "../css/technologies.css";
 import Hero from "./Hero";  
 import goccia from "../goccia.bmp";
+import picture8 from "../Picture8.jpg";
 import prova from "../prova.jpg";
 import techno from "../techno2.jpg";
 import grass from "../grass2.png";
@@ -30,7 +38,7 @@ function Technologies() {
             </div>
             <section className="images-side">
                 <img id="" className="imgProva" src={goccia} alt="" />
-                <img id="" className="imgProva" src={prova} alt="" />
+                <img id="" className="imgProva" src={picture8} alt="" />
                 <img id="" className="imgProva" src={prova} alt="" />
             </section>
             <section className="text-side">
@@ -58,51 +66,43 @@ function Technologies() {
     <div className="slider">
       <div className="freccina sx"><i className="fas fa-arrow-alt-circle-left"></i></div>
       <div className="freccina dx"><i className="fas fa-arrow-alt-circle-right"></i></div>
-      <div id="gpc" className="slider-text active first">
-      <div className="pallinoNum">
-        1
-      </div>
+
+    <section id="gpc" className="col-lg-3 offset-lg-1 col-md-4 col-sm-6 box techno slider-text active first">
         <h4>GPC</h4>
         <h5>(Gas Phase Coating)</h5>
         <div className="techinque-icon">
-          <i className="fas fa-wind"></i>
+          <FontAwesomeIcon icon={faWind} className="icon" />
         </div>
         <ul>
-          <li><i className="fas fa-check tick"></i>&nbsp;Eco-friendly</li>
-          <li><i className="fas fa-check tick"></i>&nbsp;Cheap</li>
-          <li><i className="fas fa-check tick"></i>&nbsp;Batch or continuous process</li>
+          <li><FontAwesomeIcon icon={faCheck} className="tick" />&nbsp;Eco-friendly</li>
+          <li><FontAwesomeIcon icon={faCheck} className="tick" />&nbsp;Cheap</li>
+          <li><FontAwesomeIcon icon={faCheck} className="tick" />&nbsp;Batch or continuous process</li>
         </ul>
-      </div>
-      <div id="sc" className="slider-text">
-      <div className="pallinoNum">
-        2
-      </div>
-      <h4>SC</h4>
+    </section>
+    <section id="sc" className="col-lg-3 offset-lg-1 col-md-4 col-sm-6 box techno slider-text">
+        <h4>SC</h4>
         <h5>(Spray Coating)</h5>
         <div className="techinque-icon">
-          <i className="fas fa-spray-can"></i>
+          <FontAwesomeIcon icon={faSprayCan} className="icon" />
         </div>
         <ul>
-          <li><i className="fas fa-check tick"></i>&nbsp;Fast</li>
-          <li><i className="fas fa-check tick"></i>&nbsp;Abrasion resistant</li>
-          <li><i className="fas fa-check tick"></i>&nbsp;Flexible</li>
+          <li><FontAwesomeIcon icon={faCheck} className="tick" />&nbsp;Fast</li>
+          <li><FontAwesomeIcon icon={faCheck} className="tick" />&nbsp;Abrasion resistant</li>
+          <li><FontAwesomeIcon icon={faCheck} className="tick" />&nbsp;Flexible</li>
         </ul>
-      </div>
-      <div id="lpc" className="slider-text last">
-      <div className="pallinoNum">
-        3
-      </div>
-      <h4>LPC</h4>
+    </section>
+    <section id="lpc" className="col-lg-3 offset-lg-1 col-md-4 col-sm-6 box techno slider-text last">
+        <h4>LPC</h4>
         <h5>(Liquid Phase Coating)</h5>
         <div className="techinque-icon">
-          <i className="fas fa-tint"></i>
+          <FontAwesomeIcon icon={faTint} className="icon" />
         </div>
         <ul>
-          <li><i className="fas fa-check tick"></i>&nbsp;Powder collection</li>
-          <li><i className="fas fa-check tick"></i>&nbsp;Solvent reusing</li>
-          <li><i className="fas fa-check tick"></i>&nbsp;Specific reactions</li>
+          <li><FontAwesomeIcon icon={faCheck} className="tick" />&nbsp;Powder collection</li>
+          <li><FontAwesomeIcon icon={faCheck} className="tick" />&nbsp;Solvent reusing</li>
+          <li><FontAwesomeIcon icon={faCheck} className="tick" />&nbsp;Specific reactions</li>
         </ul>
-      </div>
+    </section>
     </div>
     </div>
         </div>

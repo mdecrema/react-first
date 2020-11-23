@@ -60,6 +60,11 @@
     background-size: cover;
 }
 
+.slider-box h3 {
+    margin-left: 10%;
+    font-size: 30px;
+}
+
 .freccina {
     position: absolute;
     font-size: 20px;
@@ -143,6 +148,21 @@
 
 .tick {
     margin-right: 20px;
+}
+
+.box.techno {
+    height: 350px;
+}
+
+.box ul {
+    width: 300px;
+    margin: auto;
+}
+
+.box li {
+    width: 300px;
+    list-style: none;
+    text-align: left;
 }
 
 /*.pallino {
