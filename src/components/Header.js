@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";  
+import { Link } from "react-router-dom";  
 import "../css/variables.css";
 import "../css/header.css";
 import logo from '../SmallLogo-372w.webp';
@@ -14,9 +14,7 @@ function Header() {
       <nav className="fixed menu-desk">
         <div className="container">
           <div className="row">
-          <Router>
             <div className="logo col-lg-2">
-            
             <Link to="/">
               <img id="logo" src={logo} alt="logo"/>
             </Link>
@@ -31,7 +29,7 @@ function Header() {
                 <Link to="/contacts"><li>Contacts</li></Link>
                 <Link to="/news"><li>News</li></Link>
               </ul>
-              </Router>
+            
             </div>
           </div>
         </div>
