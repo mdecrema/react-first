@@ -8,6 +8,7 @@ import HamburgerMenu from "./HamburgerMenu";
 
 
 function Header() {
+
     return(
         <header>
      
@@ -15,19 +16,19 @@ function Header() {
         <div className="container">
           <div className="row">
             <div className="logo col-lg-2">
-            <Link to="/">
+            <Link className="link active" to="/">
               <img id="logo" src={logo} alt="logo"/>
             </Link>
             </div>
             <div className="menu col-lg-10">
             
               <ul>
-                <Link to="/technologies"><li>Technology</li></Link>
-                <Link to="/products"><li>Products &#38; Applications</li></Link>
-                <Link to="/service"><li>Service</li></Link>
-                <Link to="/company"><li>Company</li></Link>
-                <Link to="/contacts"><li>Contacts</li></Link>
-                <Link to="/news"><li>News</li></Link>
+                <Link to="/technologies" className="link"><li>Technology</li></Link>
+                <Link to="/products" className="link"><li>Products &#38; Applications</li></Link>
+                <Link to="/service" className="link"><li>Service</li></Link>
+                <Link to="/company" className="link"><li>Company</li></Link>
+                <Link to="/contacts" className="link"><li>Contacts</li></Link>
+                <Link to="/news" className="link"><li>News</li></Link>
               </ul>
             
             </div>

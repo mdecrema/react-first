@@ -22,7 +22,7 @@ function Technologies() {
       };
     const technologies = "technologies";
     const title = "Technologies";
-    const text = "Silany is developing <bold>nano and micro technologies for surface coatings</bold>. Several patents make these technologies <bold>unique and exclusive</bold>. <bold>Efficiency, practicality and competitiveness</bold> are the keywords!";
+    const text = "Silany is developing nano and micro technologies for surface coatings. Several patents make these technologies unique and exclusive. Efficiency, practicality and competitiveness are the keywords!";
     return(
         <div>
             <Hero type={technologies} imgUrl={techno} title={title} text={text} />
@@ -39,7 +39,6 @@ function Technologies() {
             <section className="images-side">
                 <img id="" className="imgProva" src={goccia} alt="" />
                 <img id="" className="imgProva" src={picture8} alt="" />
-                <img id="" className="imgProva" src={prova} alt="" />
             </section>
             <section className="text-side">
                 <p>
