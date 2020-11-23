@@ -14,11 +14,11 @@ function App() {
       <div className="page-support">
       <Router>
       <Header />
-     
+      <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/technologies" component={Technologies} />
           <Route path="/products" component={Products} />
-      
+        </Switch>
       </Router>
 
       <Footer />
