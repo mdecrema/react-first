@@ -23,8 +23,9 @@ function Technologies() {
     const technologies = "technologies";
     const title = "Technologies";
     const text = "Silany is developing nano and micro technologies for surface coatings. Several patents make these technologies unique and exclusive. Efficiency, practicality and competitiveness are the keywords!";
+    window.onload = window.scrollTo(0, 0);
     return(
-        <div id="anchorTag">
+        <div>
             <Hero type={technologies} imgUrl={techno} title={title} text={text} />
             <div className="superhydrophobic">
             <h2><strong>Superhydrophobic Silicone Nano-Filaments (SNF)</strong></h2>
@@ -107,5 +108,6 @@ function Technologies() {
         </div>
     );
 }
+
 
 export default Technologies;

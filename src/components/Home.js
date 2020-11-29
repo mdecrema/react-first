@@ -4,7 +4,9 @@ import BoxHome from "./boxHome";
 import Jumbotron from "./Jumbotron";
 
 
-const Home = (props) => (
+function Home(props) {
+  window.onload = window.scrollTo(0, 0);
+    return (
       <main>
       <Jumbotron />
       <div className="page_wrapper container">
@@ -30,5 +32,6 @@ const Home = (props) => (
     </main>
       
     );
+  }
 
 export default Home;

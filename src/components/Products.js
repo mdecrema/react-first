@@ -11,6 +11,7 @@ function Products() {
     const products = "products";
     const title = "Products & Applications";
     const text = "Nanotechnology: small scale application for great impact on the product!";
+    window.onload = window.scrollTo(0, 0);
     return(
         <div>
             <Hero type={products} imgUrl={cotone} title={title} text={text} />
