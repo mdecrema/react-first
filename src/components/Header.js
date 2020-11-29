@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";  
+import { Link, NavLink } from "react-router-dom";  
 import "../css/variables.css";
 import "../css/header.css";
 import logo from '../SmallLogo-372w.webp';
@@ -8,11 +8,6 @@ import HamburgerMenu from "./HamburgerMenu";
 
 
 function Header() {
-
-    function linkActive() {
-      document.querySelector('.link').classList.remove('link-active');
-      this.classList.add('link-active');
-    }
 
     return(
       <header>
@@ -28,12 +23,12 @@ function Header() {
             <div className="menu col-lg-10">
             
               <ul>
-                <Link onclick="linkActive()" to="/technologies"><li className="link">Technology</li></Link>
-                <Link onclick="linkActive()" to="/products"><li className="link">Products &#38; Applications</li></Link>
-                <Link onclick="linkActive()" to="/service"><li className="link">Service</li></Link>
-                <Link onclick="linkActive()" to="/company"><li className="link">Company</li></Link>
-                <Link onclick="linkActive()" to="/contacts"><li className="link">Contacts</li></Link>
-                <Link onclick="linkActive()"to="/news"><li className="link">News</li></Link>
+                <NavLink className="link" activeClassName="link-active" to="/technologies"><li>Technology</li></NavLink>
+                <NavLink className="link" activeClassName="link-active" to="/products"><li className="link">Products &#38; Applications</li></NavLink>
+                <NavLink className="link" activeClassName="link-active" to="/service"><li className="link">Service</li></NavLink>
+                <NavLink className="link" activeClassName="link-active" to="/company"><li className="link">Company</li></NavLink>
+                <NavLink className="link" activeClassName="link-active" to="/contacts"><li className="link">Contacts</li></NavLink>
+                <NavLink className="link" activeClassName="link-active" to="/news"><li className="link">News</li></NavLink>
               </ul>
             
             </div>

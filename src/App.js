@@ -6,18 +6,18 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Technologies from "./components/Technologies";
 import Home from "./components/Home";
 import Products from "./components/Products";
-
+import Active from "./components/Active";
 
 function App() {
-  
+
   return(
       <div className="page-support">
       <Router>
       <Header />
       <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/technologies" component={Technologies} />
-          <Route path="/products" component={Products} />
+          <Route className="link" id="linkUno" onclick="linkActive()" exact path="/" component={Home} />
+          <Route className="link" path="/technologies" component={Technologies} />
+          <Route className="link" path="/products" component={Products} />
         </Switch>
       </Router>
 

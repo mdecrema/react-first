@@ -102,9 +102,17 @@
     text-decoration: none;
   }
 
+  .link {
+    padding: 1% 0;
+  }
+
   .link-active {
-    background-color: rgba(0,172,187,1);
-    color: #fff;
+    border-bottom: 2px solid rgba(0,172,187,1);
+  }
+
+  .link-active li {
+    color: rgba(0,172,187,1);
+    font-weight: bold;
   }
   
   .hamb-menu ul {
