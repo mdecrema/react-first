@@ -113,7 +113,7 @@
     position: relative;
   }
   
-  .box h6 {
+  .box a {
     width: 150px;
     padding: 3% 7%;
     color: #fff;
@@ -127,7 +127,7 @@
     transform: translate(-50%, -50%);
   }
   
-  .box h6:hover {
+  .box a:hover {
     text-decoration: none;
     color: #fff;
     background: linear-gradient(170deg, rgba(0,172,187,1) 0%, rgba(9,119,137,1) 69%, rgba(16,83,102,1) 100%);

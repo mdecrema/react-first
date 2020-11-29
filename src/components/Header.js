@@ -9,8 +9,13 @@ import HamburgerMenu from "./HamburgerMenu";
 
 function Header() {
 
+    function linkActive() {
+      document.querySelector('.link').classList.remove('link-active');
+      this.classList.add('link-active');
+    }
+
     return(
-        <header>
+      <header>
      
       <nav className="fixed menu-desk">
         <div className="container">
@@ -23,12 +28,12 @@ function Header() {
             <div className="menu col-lg-10">
             
               <ul>
-                <Link to="/technologies" className="link"><li>Technology</li></Link>
-                <Link to="/products" className="link"><li>Products &#38; Applications</li></Link>
-                <Link to="/service" className="link"><li>Service</li></Link>
-                <Link to="/company" className="link"><li>Company</li></Link>
-                <Link to="/contacts" className="link"><li>Contacts</li></Link>
-                <Link to="/news" className="link"><li>News</li></Link>
+                <Link onclick="linkActive()" to="/technologies"><li className="link">Technology</li></Link>
+                <Link onclick="linkActive()" to="/products"><li className="link">Products &#38; Applications</li></Link>
+                <Link onclick="linkActive()" to="/service"><li className="link">Service</li></Link>
+                <Link onclick="linkActive()" to="/company"><li className="link">Company</li></Link>
+                <Link onclick="linkActive()" to="/contacts"><li className="link">Contacts</li></Link>
+                <Link onclick="linkActive()"to="/news"><li className="link">News</li></Link>
               </ul>
             
             </div>

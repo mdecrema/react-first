@@ -101,6 +101,11 @@
     color: rgba(0,172,187,1);
     text-decoration: none;
   }
+
+  .link-active {
+    background-color: rgba(0,172,187,1);
+    color: #fff;
+  }
   
   .hamb-menu ul {
     width: 150px;
