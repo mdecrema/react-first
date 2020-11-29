@@ -1,6 +1,7 @@
 import React from "react";
 import "../css/home.css";
 import "../css/variables.css";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Box = (props) => (
@@ -13,7 +14,8 @@ const Box = (props) => (
         </p>
         <hr />
         <div className="find_more_container">
-        <a href={props.link}>Your link text</a>
+        
+        <Link to={props.link}>Your link text</Link>
         </div>
     </section>
     

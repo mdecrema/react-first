@@ -11,7 +11,7 @@ const BoxHome = (props) => {
             title: "Technology",
             description: "Coatings based on chemistry and nano and microscale topography let's precisely tune your surface's properties. Easy applicable processes including low costs adds value to your products.",
             icon: faSprayCan,
-            path: '/technologies#anchorTag',
+            path: '/technologies',
         },
         {
             title: "Products & Applicatons",
