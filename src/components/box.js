@@ -15,7 +15,7 @@ const Box = (props) => (
         <hr />
         <div className="find_more_container">
         
-        <Link to={props.link}>Your link text</Link>
+        <Link to={props.link}>Find out more</Link>
         </div>
     </section>
     
