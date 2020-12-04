@@ -1,8 +1,11 @@
 import React from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import "../css/variables.css";
 import BoxHome from "./boxHome";
 import Jumbotron from "./Jumbotron";
 
+AOS.init();
 
 function Home(props) {
   window.onload = window.scrollTo(0, 0);
@@ -11,7 +14,7 @@ function Home(props) {
       <Jumbotron />
       <div className="page_wrapper container">
 
-        <div className="container">
+        <div className="container" data-aos="fade-left">
           <div className="col-lg-12 box-text">
             <h2>Silany, personal advisor for your product enhancement</h2>
             <p>
